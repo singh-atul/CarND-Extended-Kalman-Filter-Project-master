@@ -1,7 +1,24 @@
-# Extended Kalman Filter Project Starter Code
+# Extended Kalman Filter
 Self-Driving Car Engineer Nanodegree Program
 
-In this project you will utilize a kalman filter to estimate the state of a moving object of interest with noisy lidar and radar measurements. Passing the project requires obtaining RMSE values that are lower than the tolerance outlined in the project rubric. 
+This Project is the sixth task (Project 1 of Term 2) of the Udacity Self-Driving Car Nanodegree program. The main goal of the project is to apply Extended Kalman Filter to fuse data from LIDAR and Radar sensors of a self driving car using C++.
+
+The project was created with the Udacity Starter Code (https://github.com/udacity/CarND-Extended-Kalman-Filter-Project)
+
+In this project I have used a kalman filter to estimate the state of a moving object of interest with noisy lidar and radar measurements.
+
+# Content of Repo 
+`scr` a directory with the project code:
+ `main.cpp` - reads in data, calls a function to run the Kalman filter, calls a function to calculate RMSE
+ `FusionEKF.cpp` - initializes the filter, calls the predict function, calls the update function
+ `kalman_filter.cpp`- defines the predict function, the update function for lidar, and the update function for radar
+ `tools.cpp` - a function to calculate RMSE and the Jacobian matrix
+`data` a directory with input files, provided by Udacity
+`results` a directory with output and log files
+`Docs` a directory with files formats description
+`task.md` the task of the project by Udacity
+`extra` a directory with detailed information used hardware and software (extra/additional_info.txt file) and screenshots of the final RMSE.
+
 
 This project involves the Term 2 Simulator which can be downloaded [here](https://github.com/udacity/self-driving-car-sim/releases)
 
